@@ -28,6 +28,7 @@ label {
 
 .form {
   width: 600px;
+  margin: 0 15px;
 }
 
 .about-you {
@@ -47,6 +48,19 @@ label {
   transition: all 0.2s ease-in-out;
 }
 
+.about-you:focus::placeholder {
+  opacity: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 .programming-languages {
   width: 120px;
   height: 25px;
@@ -64,7 +78,7 @@ label {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #475486;
+  accent-color: #383e53;
   cursor: pointer;
 }
 
@@ -87,4 +101,10 @@ input[type="checkbox"] {
   border: none;
   box-shadow: 0 0 5px 2px #475486;
   font-size: 11px;
+}
+
+@media (max-width: 510px) {
+  body {
+    font-size: 16px;
+  }
 }
