@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <label>
+        Full name:
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Linus Torvalds"
+          required
+          autofocus
+        />
+      </label>
+
+      <label>
+        Email:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="benedict@torvalds.com"
+          required
+        />
+      </label>
+
+      <label>
+        Age:
+        <input type="number" name="age" required />
+      </label>
+
+      <label>
+        Favorite programming language:
+        <select name="programming-language" required>
+          <option value="javascript" selected>JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="c">C</option>
+          <option value="assembler">Assembler</option>
+        </select>
+      </label>
+
+      <label>
+        I have experience in freelancing
+        <input type="checkbox" name="freelance-experience" value="1" />
+      </label>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
