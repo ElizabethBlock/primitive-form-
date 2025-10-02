@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Primitive form</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form id="form">
+    <form class="form">
       <label>
         Full name:
         <input
+          class="about-you"
           type="text"
           name="name"
-          id="name"
           placeholder="Linus Torvalds"
           required
           autofocus
@@ -25,9 +25,9 @@
       <label>
         Email:
         <input
+          class="about-you"
           type="email"
           name="email"
-          id="email"
           placeholder="benedict@torvalds.com"
           required
         />
@@ -35,7 +35,7 @@
 
       <label>
         Age:
-        <input type="number" name="age" required />
+        <input class="about-you" type="number" name="age" required />
       </label>
 
       <label>
@@ -53,7 +53,7 @@
         <input type="checkbox" name="freelance-experience" value="1" />
       </label>
 
-      <button type="submit">Submit Application</button>
+      <button class="btn" type="submit">Submit Application</button>
     </form>
 
     <script src="js/main.js"></script>

@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/neogrey');
+
 *,
 *::before,
 *::after {
@@ -9,13 +10,13 @@
 
 body {
   font-family: 'NeoGrey', sans-serif;  
-  font-size: 18px;
-  color: #9F9FA9;
-  background-color: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-size: 18px;
+  color: #9F9FA9;
+  background-color: #181818;
 }
 
 label {
@@ -25,3 +26,43 @@ label {
   margin-bottom: 25px;
 }
 
+.form {
+  width: 600px;
+}
+
+.about-you{
+  width: 230px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 14px;
+  background-color: #2C2C2C;
+  color: #9F9FA9;
+}
+
+.about-you:focus {
+  box-shadow: 0 0 5px 2px #475486;
+  outline: none;
+  transition: all 0.2s ease-in-out;}
+
+.btn {
+  font-family: 'NeoGrey', sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #475486;
+  color: #9F9FA9;
+  transition: all 0.4s ease-in-out;
+  border: none;
+  box-shadow: 0 0 5px 2px #475486;
+  font-size: 11px;
+}
